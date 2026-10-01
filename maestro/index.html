@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maestro — MIDI synthesizer host | dimms</title>
+    <meta name="description" content="A professional MIDI synthesizer host for Linux, macOS and Windows.">
+    <meta name="keywords"
+        content="Maestro, MIDI, synthesizer, SoundFont, SF2, SF3, SFZ, BASSMIDI, FluidSynth, KDMAPI, virtual MIDI device">
+    <link rel="canonical" href="/maestro">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maestro — MIDI synthesizer host">
+    <meta property="og:description" content="A professional MIDI synthesizer host for Linux, macOS and Windows.">
+    <meta property="og:url" content="/maestro">
+    <meta name="theme-color" content="#461c26">
+
+    <link rel="icon" href="https://github.com/dimms0/maestro/raw/refs/heads/master/assets/logo/maestro-icon.svg"
+        type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="theme-maestro">
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="brand">
+                <img src="https://github.com/dimms0/maestro/raw/refs/heads/master/assets/logo/maestro-icon.svg" alt=""
+                    width="24" height="24">
+                <span>dimms</span>
+                <span class="brand-sub">Maestro</span>
+            </a>
+            <nav class="site-nav">
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="https://github.com/dimms0/maestro">Source</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-mark">
+                        <img src="https://github.com/dimms0/maestro/raw/refs/heads/master/assets/logo/maestro-icon.svg"
+                            alt="Maestro" width="60" height="60">
+                        <a class="badge" href="https://github.com/dimms0/maestro/releases" data-release-link
+                            hidden>Version <span data-version></span></a>
+                    </div>
+                    <h1>Maestro</h1>
+                    <p>
+                        A professional MIDI synthesizer host for Linux, macOS and Windows.
+                    </p>
+                    <div class="btn-row">
+                        <a href="#download" class="btn btn-primary">
+                            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M8 2v8M4.5 7 8 10.5 11.5 7M2.5 13h11" />
+                            </svg>
+                            Download
+                        </a>
+                        <a href="https://github.com/dimms0/maestro" class="btn btn-ghost">
+                            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.19c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+                            </svg>
+                            Source on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Features</span>
+                    <h2 class="section-title">One engine, wherever the MIDI comes from</h2>
+                    <p class="section-lead">
+                        A game, a DAW, a standalone player or a file on disk — they all reach
+                        the same synthesizer, with the same SoundFonts and the same settings.
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2.5" y="5" width="15" height="10" rx="2" />
+                                <path d="M6 5v4M10 5v4M14 5v4" />
+                            </svg>
+                        </div>
+                        <h3>System-wide virtual device</h3>
+                        <p>
+                            Anything that can send MIDI can play through Maestro
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M2.5 10a3.5 3.5 0 0 1 7 0 3.5 3.5 0 0 0 7 0" />
+                                <circle cx="6" cy="10" r="3.5" />
+                                <circle cx="14" cy="10" r="3.5" />
+                            </svg>
+                        </div>
+                        <h3>Multiple synthesis engines</h3>
+                        <p>
+                            FluidSynth and BASSMIDI and more to come in the future
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="10" cy="10" r="7.5" />
+                                <path d="M10 5.5V10l3 2" />
+                            </svg>
+                        </div>
+                        <h3>Idles out of your way</h3>
+                        <p>
+                            Maestro loads the SoundFonts on-demand depending on the activity from apps
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 5h14M3 10h14M3 15h9" />
+                                <circle cx="16" cy="15" r="1.6" />
+                            </svg>
+                        </div>
+                        <h3>SoundFont lists</h3>
+                        <p>
+                            Extremely customizable SoundFont loading
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 3.5h6l4 4v9H4z" />
+                                <path d="M10 3.5v4h4" />
+                                <path d="M6.5 12.5h5" />
+                            </svg>
+                        </div>
+                        <h3>Offline MIDI converter</h3>
+                        <p>
+                            Queue up MIDI files and render them to high quality audio
+                        </p>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4v12M4 7h8a2 2 0 0 1 0 4H4" />
+                                <circle cx="15" cy="14" r="2" />
+                            </svg>
+                        </div>
+                        <h3>Event processing</h3>
+                        <p>
+                            Robust and customizable MIDI event editing / filtering
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section class="section" id="download">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Download</span>
+                    <h2 class="section-title">Maestro <span data-version></span></h2>
+                    <p class="section-lead">
+                        Builds for every platform and both architectures are published on
+                        GitHub Releases.
+                    </p>
+                </div>
+
+                <div class="grid grid-3">
+                    <article class="card download-card">
+                        <div class="platform">
+                            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M2.5 4.3 9 3.4v6.1H2.5V4.3Zm0 11.4L9 16.6v-6H2.5v5.1ZM10 3.25l7.5-1.05v7.3H10v-6.25Zm0 7.35h7.5v7.25L10 16.8v-6.2Z" />
+                            </svg>
+                            Windows
+                        </div>
+                        <ul>
+                            <li>Installer (<code>.exe</code>)</li>
+                            <li>Windows 10+</li>
+                        </ul>
+                        <div class="downloads">
+                            <div class="download-row">
+                                <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                    data-asset="-x64-setup.exe">x64</a>
+                                <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                    data-asset="-arm64-setup.exe">ARM64</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card download-card">
+                        <div class="platform">
+                            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M13.7 10.6c-.02-2 1.63-2.96 1.7-3.01-.93-1.35-2.37-1.54-2.88-1.56-1.23-.12-2.4.72-3.02.72-.62 0-1.58-.7-2.6-.68-1.34.02-2.57.78-3.26 1.97-1.39 2.41-.35 5.98 1 7.93.66.95 1.44 2.02 2.47 1.98.99-.04 1.37-.64 2.57-.64s1.54.64 2.6.62c1.07-.02 1.75-.97 2.4-1.93.76-1.1 1.07-2.17 1.09-2.22-.02-.01-2.09-.8-2.11-3.18ZM11.73 4.6c.55-.66.92-1.58.82-2.5-.79.03-1.75.53-2.31 1.19-.5.58-.94 1.52-.82 2.42.88.07 1.77-.45 2.31-1.11Z" />
+                            </svg>
+                            macOS
+                        </div>
+                        <ul>
+                            <li>Disk image (<code>.dmg</code>)</li>
+                            <li>macOS 13 or later</li>
+                        </ul>
+                        <div class="downloads">
+                            <div class="download-row">
+                                <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                    data-asset="-macos-arm64.dmg">Apple Silicon</a>
+                                <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                    data-asset="-macos-x86_64.dmg">Intel</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card download-card">
+                        <div class="platform">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M7.5 3.5c0-1.1.9-2 2.5-2s2.5.9 2.5 2v3.8c0 1.2 3 3.4 3 6.2 0 2.4-2.4 4-5.5 4s-5.5-1.6-5.5-4c0-2.8 3-5 3-6.2V3.5Z" />
+                                <path d="M8.6 5.2h2.8" />
+                            </svg>
+                            Linux
+                        </div>
+                        <ul>
+                            <li><code>.deb</code>, <code>.rpm</code> and a portable tarball</li>
+                            <li>Kernel 6.5+</li>
+                        </ul>
+                        <div class="downloads">
+                            <div>
+                                <span class="download-label">x86_64</span>
+                                <div class="download-row">
+                                    <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                        data-asset="_amd64.deb">.deb</a>
+                                    <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                        data-asset=".x86_64.rpm">.rpm</a>
+                                    <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                        data-asset="-linux-x86_64.tar.gz">.tar.gz</a>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="download-label">aarch64</span>
+                                <div class="download-row">
+                                    <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                        data-asset="_arm64.deb">.deb</a>
+                                    <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                        data-asset=".aarch64.rpm">.rpm</a>
+                                    <a href="https://github.com/dimms0/maestro/releases/latest" class="btn btn-primary"
+                                        data-asset="-linux-aarch64.tar.gz">.tar.gz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes -->
+        <section class="section" id="notes">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Good to know</span>
+                    <h2 class="section-title">Requirements and licensing</h2>
+                </div>
+
+                <div class="notes">
+                    <p>
+                        <strong>MIDI 2.0 on Windows</strong> — MIDI 2.0 functionality is not yet
+                        supported on Windows as it requires <a href="https://aka.ms/midi">Windows MIDI Services</a>
+                        which are not officially released yet. Once WMS is official, Maestro will ship with full
+                        support for WMS and MIDI 2.0 virtual devices.
+                    </p>
+                    <p>
+                        <strong>Licence</strong> — Maestro is free software under the
+                        <a href="https://github.com/dimms0/maestro/blob/main/LICENSE.md">GNU LGPL, version 3 or
+                            later</a>.
+                    </p>
+                    <p>
+                        <strong>Third-party libraries</strong> — FluidSynth (LGPL-2.1-or-later)
+                        and Un4seen Developments' BASS, BASSMIDI and BASSFLAC (proprietary,
+                        redistributed under Un4seen's own terms) are loaded at runtime and never
+                        statically linked. The full notices ship with every build and are in
+                        <a
+                            href="https://github.com/dimms0/maestro/blob/main/THIRD-PARTY-NOTICES.md">THIRD-PARTY-NOTICES.md</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--plain" style="padding-top:0">
+            <div class="container">
+                <div class="cta">
+                    <h2>Found a bug, or want a feature?</h2>
+                    <p>
+                        Maestro is developed in the open. Issues and pull requests are the
+                        fastest way to reach it.
+                    </p>
+                    <div class="btn-row">
+                        <a href="https://github.com/dimms0/maestro/issues" class="btn btn-primary">Open an issue on
+                            GitHub</a>
+                        <a href="/discord" class="btn btn-primary">Let us know on Discord</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-links">
+                <a href="/">dimms</a>
+                <a href="https://github.com/dimms0/maestro">Source</a>
+                <a href="https://github.com/dimms0/maestro/releases/latest">Releases</a>
+                <a href="mailto:info@dimms.gr">info@dimms.gr</a>
+            </div>
+            <div class="copyright">&copy; <span data-year>2026</span> dimms</div>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+
+</html>
