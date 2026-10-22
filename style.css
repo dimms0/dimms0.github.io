@@ -453,6 +453,36 @@ code {
     padding-inline: 0.75rem;
 }
 
+/* Screenshot showcase — the first shot spans the row, the rest pair up */
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.shot {
+    margin: 0;
+}
+
+.shot:first-child {
+    grid-column: 1 / -1;
+}
+
+.shot img {
+    width: 100%;
+    height: auto;
+}
+
+/* The screenshots carry their window shadow on a transparent margin, so pull
+   the caption up to sit just under the window rather than under the margin. */
+.shot figcaption {
+    margin-top: -4%;
+    color: var(--text-3);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* Code block */
 .code {
     margin-top: 1.5rem;
@@ -572,6 +602,10 @@ code {
 
     .site-nav {
         gap: 1.125rem;
+    }
+
+    .showcase {
+        grid-template-columns: 1fr;
     }
 
     .cta {
